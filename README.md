@@ -6,7 +6,11 @@ Aplikacja kliencka została stworzona z języku C++ z frameworkiem Qt dla system
 Aplikacja serwera znajduje się w katalogu 'server'. Została stworzona dla systemu Linux. Sposób kompilacji i uruchomienia:
 
 Kompilacja serwera:
+
     g++ *.cpp -o 'server name'
+    
     g++ -Wall -std=c++17 -pthread *.cpp -o 'server name'
+    
 Uruchomienie serwera:
+
     ./'server name'
