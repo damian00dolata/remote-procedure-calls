@@ -1,16 +1,16 @@
 # remote-procedure-calls
-Aplikacja serwer-klient łącząca się po protokole TCP. Klient po połączeniu może zdalnie wywoływać pobrane z serwera procedury.
+A client-server application connecting by TCP protocol. After connection, client is able to remotely call a procedure aquired from server.
 
-Aplikacja kliencka została stworzona z języku C++ z frameworkiem Qt dla systemu Windows. Plik wykonywalny umieszczony jest w katalogu 'client', a jego pliki źródłowe znajdują się w katalogu 'source'. Do kompilacji wymagane jest środowisko Qt.
+Client application was created in C++ with Qt framework for Windows. Executable file is contained in *client* catalog. Application source files are contained in *source* catalog. Qt environment is required for compilation.
 
-Aplikacja serwera znajduje się w katalogu 'server'. Została stworzona dla systemu Linux. Sposób kompilacji i uruchomienia:
+Server application is contained in *server* catalog. It was made for Linux. Compilation and execution steps:
 
-Kompilacja serwera:
+Server compilation:
 
     g++ *.cpp -o 'server name'
     
     g++ -Wall -std=c++17 -pthread *.cpp -o 'server name'
     
-Uruchomienie serwera:
+Server execution:
 
     ./'server name'
